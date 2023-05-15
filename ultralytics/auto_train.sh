@@ -1,7 +1,7 @@
 #!/bin/bash
 source activate detection # 가상환경 activate
-CONFIG_PATH="/opt/ml/baseline/ultralytics/configs"
-CONFIG_ENDS_PATH="/opt/ml/baseline/ultralytics/configs/ends"
+CONFIG_PATH="/opt/ml/baseline/ultralytics/ultralytics/yolo/cfg/zconfigs"
+CONFIG_ENDS_PATH="/opt/ml/baseline/ultralytics/ultralytics/yolo/cfg/zconfigs/ends"
 
 while true; do
     configs=($(ls ${CONFIG_PATH} | grep ".yaml$")) # ls로 config 폴더 안의 모든 파일의 목록을 얻고 grep으로 .yaml이 들어간 파일만 추출

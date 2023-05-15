@@ -2,6 +2,11 @@
 # Default training settings and hyperparameters for medium-augmentation COCO training
 
 # 변경점을 짧게 요약
+#
+
+# 데이터 경로
+train_json_path: "/opt/ml/dataset/train_split.json"
+valid_json_path: "/opt/ml/dataset/valid_split.json"
 
 task: detect  # YOLO task, i.e. detect, segment, classify, pose
 mode: train  # YOLO mode, i.e. train, val, predict, export, track, benchmark
@@ -19,9 +24,7 @@ cache: True  # True/ram, disk or False. Use cache for data loading
 device: 0 # device to run on, i.e. cuda device=0 or device=0,1,2,3 or device=cpu
 workers: 8  # number of worker threads for data loading (per RANK if DDP)
 project: "object-detection" # project name
-
 name:  # experiment name, results saved to 'project/name' directory
-
 exist_ok: False  # whether to overwrite existing experiment
 pretrained: False  # whether to use a pretrained model
 optimizer: SGD  # optimizer to use, choices=['SGD', 'Adam', 'AdamW', 'RMSProp']

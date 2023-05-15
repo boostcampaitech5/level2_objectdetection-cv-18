@@ -7,16 +7,16 @@ import subprocess
 import yaml
 from ultralytics import YOLO
 
-ROOT_PATH = "/opt/ml/dataset_yolo"
+ROOT_PATH = "/opt/ml/dataset"
 IMAGE_PATH = os.path.join(ROOT_PATH, "images")
 LABEL_PATH = os.path.join(ROOT_PATH, "labels")
-CONFIG_PATH = "/opt/ml/baseline/ultralytics/configs"
+CONFIG_PATH = "/opt/ml/baseline/ultralytics/ultralytics/yolo/cfg/zconfigs"
 
 if __name__ == "__main__":
     # argparse 모듈을 사용하여 스크립트 실행 시 사용자로부터 입력받은 인자들을 파싱
     parser = argparse.ArgumentParser(description="YOLO v8 학습 코드")
 
-    parser.add_argument("--yaml_file", help="학습 파라미터를 저장하는 yaml 파일의 경로", required=True)
+    parser.add_argument("--yaml_file", help="학습 파라미터를 저장하는 yaml 파일의 이름", required=True)
     args = parser.parse_args()
     with open(os.path.join(CONFIG_PATH, args.yaml_file), "r") as config_yaml_file:
         config = yaml.load(config_yaml_file, Loader=yaml.FullLoader)
@@ -47,6 +47,14 @@ if __name__ == "__main__":
     print("split된 파일 갯수")
     print(f"train: {len_train_data}")
     print(f"valid: {len_valid_data}\n")
+
+    os.makedirs(IMAGE_PATH, exist_ok=True)
+    os.makedirs(os.path.join(IMAGE_PATH, "train"), exist_ok=True)
+    os.makedirs(os.path.join(IMAGE_PATH, "valid"), exist_ok=True)
+
+    os.makedirs(LABEL_PATH, exist_ok=True)
+    os.makedirs(os.path.join(LABEL_PATH, "train"), exist_ok=True)
+    os.makedirs(os.path.join(LABEL_PATH, "valid"), exist_ok=True)
 
     # train 폴더와 valid 폴더로 분리하여 복사
     for train_image_path in train_image_paths:
