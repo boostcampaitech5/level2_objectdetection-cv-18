@@ -31,5 +31,5 @@ level2_objectdetection-cv-18
 ```
 
 ## Wrap-Up Report
-실험 내용과 결과를 바탕으로 [Report](객체 탐지_CV_팀 리포트(18조).pdf) 를 작성하였습니다.
+실험 내용과 결과를 바탕으로 [Report](https://github.com/boostcampaitech5/level2_objectdetection-cv-18/blob/master/객체%20탐지_CV_팀%20리포트(18조).pdf) 를 작성하였습니다.
 자세한 실험 내용은 [Notion](https://healthyai.notion.site/Wrap-Up-7a236d41e52f4bc49decb84a9d2caf0e) 에서 확인해보실 수 있습니다.
