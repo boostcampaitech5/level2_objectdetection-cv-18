@@ -13,11 +13,11 @@ Recycable Trash Object Detection Task
 3. 새롭게 시작한 팀원들과 협업 방식을 맞추기 위해 이번 챌린지 뿐만 아닌 앞으로의 목표들에 대해서도 많은 논의를 하였습니다.
 
 
-## 프로젝트 구성원 및 역할
-| 김준태 | 박재민 | 송인성 | 이지유 | 최홍록 |
-| :-----: | :-----: | :-----: | :-----: | :-----: |
-| EDA <br> 2 Stage Modeling (Cascade R-CNN) <br> StratifiedGroupKFold <br> MMdetection Baseline Train <br> Psuedo Labeling <br> Ensemble | EDA <br> 1 Stage Modeling (YOLOv8) <br> StratifiedGroupKFold <br> MMdetection Baseline Train <br> Augmentation <br> Autorun Shell Script <br> Ensemble | EDA <br> 1 Stage Modeling (RetinaNet) <br> 2 Stage Modeling (Cascade R-CNN) <br> StratifiedGroupKFold <br> MMdetection Baseline Config <br> Augmentation <br> Ensemble | EDA <br> 2 Stage Modeling (Faster R-CNN, Cascade R-CNN) <br> MMDetection Baseline Config <br> Ensemble | EDA <br> 1 Stage Modeling (YOLOv8) <br> MMdetection Baseline Config <br> Data Cleaning <br> Ensemble |
-| #행복전도사 | #공유장인 | #기록무새 | #양봉업자 | #구현장인 |
+## 프로젝트 구성원
+|               김준태               |                 박재민                 |                 송인성                 |                이지유                 |                최홍록                 |
+| :--------------------------------: | :------------------------------------: | :------------------------------------: | :-----------------------------------: | :-----------------------------------: |
+| [GitHub](https://github.com/KZunT) | [GitHub](https://github.com/jemin7709) | [GitHub](https://github.com/0523kevin) | [GitHub](https://github.com/jiyoulee) | [GitHub](https://github.com/chroki41) |
+
 
 
 
