@@ -11,7 +11,7 @@ Recycable Trash Object Detection Task
 ## 프로젝트 구성원 및 역할
 | 김준태 | 박재민 | 송인성 | 이지유 | 최홍록 |
 | :--: | :------: | :------:| :--------:| :---:|
-| EDA <br> 2 Stage Modeling (Cascade R-CNN) <br> K-Fold <br> Psuedo Labeling | EDA <br> 1 Stage Modeling (YOLOv8) <br> StratifiedGroupKFold <br> Autorun Shell script <br> Ensemble (WBF) | EDA <br> 1 Stage Modeling (RetinaNet) 2 Stage Modeling (Cascade R-CNN) <br> StratifiedGroupKFold <br> Augmentation <br> Focal Loss <br> Ensemble (NMS) | EDA <br> 2 Stage Modeling (Faster R-CNN, Cascade R-CNN) <br> MMDetection Baseline Config <br> Ensemble | EDA <br> 1 Stage Modeling (YOLOv8) <br> MMdetection Baseline Config 작성 <br> Data Cleaning  |
+| EDA <br> 2 Stage Modeling (Cascade R-CNN) <br> K-Fold <br> Psuedo Labeling | EDA <br> 1 Stage Modeling (YOLOv8) <br> StratifiedGroupKFold <br> Autorun Shell script <br> Ensemble (WBF) | EDA <br> 1 Stage Modeling (RetinaNet) <br> 2 Stage Modeling (Cascade R-CNN) <br> StratifiedGroupKFold <br> Augmentation <br> Ensemble (NMS) | EDA <br> 2 Stage Modeling (Faster R-CNN, Cascade R-CNN) <br> MMDetection Baseline Config <br> Ensemble | EDA <br> 1 Stage Modeling (YOLOv8) <br> MMdetection Baseline Config 작성 <br> Data Cleaning  |
 | #행복전도사 | #공유장인 | #기록무새 | #양봉업자 | #구현장인 |
 
 
